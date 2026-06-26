@@ -1,0 +1,15 @@
+# Models — VERIFY current names for your account: https://ai.google.dev/gemini-api/docs/models
+embedding_model: gemini-embedding-001
+generation_model: gemini-2.5-flash
+generation_temperature: 0.1
+
+# Retrieval
+top_k: 8                 # context cards sent to the model
+candidate_k: 30          # candidates from each retriever before fusion
+rrf_k: 60                # reciprocal-rank-fusion constant
+dense_dim_fallback: 512  # dimension of the offline hashing embedder
+
+# Paths (relative to project root)
+registry_dir: registry
+index_dir: data/index
+databook_path: outputs/DATABOOK.md
